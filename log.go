@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"runtime"
 	"runtime/debug"
-	"sohucs/gcontext"
+	"github.com/liyuan35023/log/gcontext"
 	"sort"
 	"strings"
 	"sync"
