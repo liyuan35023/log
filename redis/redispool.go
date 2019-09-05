@@ -189,13 +189,13 @@ func (r *RedisPool) Del(key string) error {
 	return err
 }
 
-func (r *RedisPool) LPush(key string, val ...string) error {
+func (r *RedisPool) LPush(key string, val ...string) (int, error) {
 	conn := r.pool.Get()
 	defer conn.Close()
 
-	_, err := conn.Do("LPUSH", redis.Args{key}.AddFlat(val)...)
+	reply, err := conn.Do("LPUSH", redis.Args{key}.AddFlat(val)...)
 
-	return err
+	return redis.Int(reply, err)
 }
 
 func (r *RedisPool) RPop(key string, val ...string) (string, error) {
