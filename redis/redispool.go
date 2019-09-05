@@ -200,7 +200,7 @@ func (r *RedisPool) LPush(key string, val ...string) error {
 
 func (r *RedisPool) RPop(key string, val ...string) (string, error) {
 	conn := r.pool.Get()
-	defer conn.Close
+	defer conn.Close()
 
 	return redis.String(conn.Do("RPop", redis.Args{key}.AddFlat(val)...))
 }
