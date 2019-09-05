@@ -1,0 +1,9 @@
+global = "global-val"
+
+[datanode]
+# example
+ip = "127.0.0.1"
+port = 2333
+flag = true
+
+nodefine = "nodefine"
