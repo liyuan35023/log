@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"hbase-sdk/model"
+	"github.com/liyuan35023/log/hbase/model"
 
 	"github.com/tsuna/gohbase"
 	"github.com/tsuna/gohbase/hrpc"

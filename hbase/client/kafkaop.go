@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 	"errors"
-	"hbase-sdk/conf"
-	"hbase-sdk/model"
+	"github.com/liyuan35023/log/hbase/conf"
+	"github.com/liyuan35023/log/hbase/model"
 	"sync"
 
 	"github.com/Shopify/sarama"

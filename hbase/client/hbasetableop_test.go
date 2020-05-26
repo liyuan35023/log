@@ -2,7 +2,7 @@ package client
 
 import (
 	"fmt"
-	"hbase-sdk/model"
+	"github.com/liyuan35023/log/hbase/model"
 	"io"
 	"os"
 	"testing"

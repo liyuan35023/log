@@ -1,8 +1,8 @@
 package client
 
 import (
-	"hbase-sdk/conf"
-	"hbase-sdk/model"
+	"github.com/liyuan35023/log/hbase/conf"
+	"github.com/liyuan35023/log/hbase/model"
 
 	"github.com/tsuna/gohbase"
 )

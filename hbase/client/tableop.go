@@ -1,6 +1,6 @@
 package client
 
-import "hbase-sdk/model"
+import "github.com/liyuan35023/log/hbase/model"
 
 // TableOp is interface for query, insert, remove, scan rows
 type TableOp interface {

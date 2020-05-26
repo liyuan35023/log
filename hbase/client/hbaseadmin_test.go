@@ -1,7 +1,7 @@
 package client
 
 import (
-	"hbase-sdk/model"
+	"github.com/liyuan35023/log/hbase/model"
 	"testing"
 )
 
