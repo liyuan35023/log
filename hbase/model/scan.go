@@ -41,6 +41,10 @@ func NewScanPrefix(prefix string) *Scan {
 	return NewScan(defaultStartRow, defaultEndRow, prefix, defaultCache, nil)
 }
 
+func NewScanRangeWithFilter(start string, stop string, filter *filter.FamilyFilter) *Scan {
+	return NewScan(start, stop, defaultPrefix, defaultCache, filter)
+}
+
 func GenerateHBaseScan(table string, scan *Scan) (*hrpc.Scan, error) {
 	if scan == nil {
 		return nil, nil
