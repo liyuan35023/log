@@ -41,7 +41,7 @@ func NewScanPrefix(prefix string) *Scan {
 	return NewScan(defaultStartRow, defaultEndRow, prefix, defaultCache, nil)
 }
 
-func NewScanRangeWithFilter(start string, stop string, filter *filter.FamilyFilter) *Scan {
+func NewScanRangeWithFilter(start string, stop string, filter filter.Filter) *Scan {
 	return NewScan(start, stop, defaultPrefix, defaultCache, filter)
 }
 
