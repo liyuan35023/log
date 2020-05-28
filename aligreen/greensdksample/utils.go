@@ -10,10 +10,10 @@ import (
 	"crypto/md5"
 	"time"
 
-	"uuid"
+	"github.com/liyuan35023/log/aligreen/uuid"
 )
 
-const host string = "http://green.cn-shanghai.aliyuncs.com"
+const host string = "http://green.cn-beijing.aliyuncs.com"
 const method string = "POST"
 const newline string = "\n"
 const MIME string = "application/json"
