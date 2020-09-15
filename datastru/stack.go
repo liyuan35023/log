@@ -1,4 +1,4 @@
-package datastr
+package datastru
 
 import "container/list"
 
