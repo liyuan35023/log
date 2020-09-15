@@ -10,7 +10,7 @@ import (
 	"crypto/md5"
 	"time"
 
-	"github.com/liyuan35023/log/aligreen/uuid"
+	"github.com/liyuan35023/utils/aligreen/uuid"
 )
 
 const host string = "http://green.cn-beijing.aliyuncs.com"

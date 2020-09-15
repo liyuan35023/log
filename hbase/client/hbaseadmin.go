@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"github.com/liyuan35023/log/hbase/model"
+	"github.com/liyuan35023/utils/hbase/model"
 
 	"github.com/tsuna/gohbase"
 	"github.com/tsuna/gohbase/hrpc"

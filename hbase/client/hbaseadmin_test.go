@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/liyuan35023/log/hbase/model"
+	"github.com/liyuan35023/utils/hbase/model"
 	"testing"
 )
 

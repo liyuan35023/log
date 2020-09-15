@@ -4,18 +4,18 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/liyuan35023/utils/gcontext"
 	"io"
+	"io/ioutil"
 	"log"
 	"os"
 	"regexp"
 	"runtime"
 	"runtime/debug"
-	"github.com/liyuan35023/log/gcontext"
 	"sort"
 	"strings"
 	"sync"
 	"time"
-	"io/ioutil"
 )
 const (
 	Ldate         = log.Ldate
@@ -262,11 +262,11 @@ type logger struct {
 	highlighting bool
 	dailyRolling bool
 	hourRolling  bool
-	fileName  string
-	logSuffix string
-	fd        *os.File
-	maxLogs int
-	lock sync.Mutex
+	fileName     string
+	logSuffix    string
+	fd           *os.File
+	maxLogs      int
+	lock         sync.Mutex
 }
 func (l *logger) SetHighlighting(highlighting bool) {
 	l.highlighting = highlighting

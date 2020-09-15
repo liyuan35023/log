@@ -3,8 +3,7 @@ package redis
 import (
 	"github.com/stretchr/testify/assert"
 	"os"
-	"sohucs/log"
-	"sohucs/utils"
+	"github.com/liyuan35023/utils/log"
 	"strconv"
 	"testing"
 	"time"
@@ -35,7 +34,7 @@ func TestPing(t *testing.T) {
 }
 
 func TestSetAndGet(t *testing.T) {
-	prefix := utils.FormatInt64(time.Now().Unix())
+	prefix := strconv.FormatInt(time.Now().Unix(), 10)
 	n := 10
 	for i := 1; i < n; i++ {
 		key := getSetKey(prefix, i)
